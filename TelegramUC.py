@@ -1,5 +1,6 @@
 from telethon import TelegramClient, sync
 from telethon.tl.functions.account import UpdateUsernameRequest
+from telethon.tl.functions.account import UpdateProfileRequest
 import random, time, datetime
 from colorama import Fore, init
 init()
@@ -29,8 +30,13 @@ def pickUsername(length):
         password += random.choice(chars)
     return password
 def changeus(username):
-	client(UpdateUsernameRequest(username))
+	try:
+		client(UpdateProfileRequest(first_name=username))
+		client(UpdateUsernameRequest(username))
+	except  Exception as f:
+		print(f)
 def Start(min):
+	changeus(pickUsername(data["maxlength"]))
 	print("Started!")
 	while True:
 		time.sleep(int(min)*60)

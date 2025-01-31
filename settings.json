@@ -1,13 +1,13 @@
 {
     "cm1": "Minutes to wait for update username",
-    "minutes": "10",
+    "minutes": "5",
 
     "cm2": "Max username length",
     "maxlength": "8",
 
     "cm3": "Api Id",
-    "api_id": "your_api_id",
+    "api_id": "28275692",
 
     "cm4": "Api Hash",
-    "api_hash": "your_api_hash"
+    "api_hash": "476059bd479244a4b57a668df5863b73"
 }
