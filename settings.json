@@ -1,0 +1,16 @@
+{
+    "cm1": "Minutes to wait for update username",
+    "minutes": "5",
+
+    "cm2": "Max username length",
+    "maxlength": "10",
+
+    "cm3": "Api Id",
+    "api_id": "yourapiid",
+
+    "cm4": "Api Hash",
+    "api_hash": "yourapihash",
+
+    "cm5": "Change first name?(0, 1)",
+    "ifch": "1"
+}

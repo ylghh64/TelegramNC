@@ -31,7 +31,8 @@ def pickUsername(length):
     return password
 def changeus(username):
 	try:
-		client(UpdateProfileRequest(first_name=username))
+		if data["ifch"] == "1":
+			client(UpdateProfileRequest(first_name=username))
 		client(UpdateUsernameRequest(username))
 	except  Exception as f:
 		print(f)
